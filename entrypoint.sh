@@ -2,9 +2,9 @@
 set -euo pipefail
 
 # 要下载的 raw 文件 URL（默认指向你的仓库 main 分支）
-#RAW_URL="${DENOTS_RAW_URL:-https://raw.githubusercontent.com/xiongli870110-hue/proxy_api_docker/main/deno.ts}"
+RAW_URL="${DENOTS_RAW_URL:-https://raw.githubusercontent.com/xiongli870110-hue/proxy_api_docker/main/deno.ts}"
 # 代理其它网站
-RAW_URL="${DENOTS_RAW_URL:-https://raw.githubusercontent.com/xiongli870110-hue/proxy_api_docker/main/deno_google.ts}"
+#RAW_URL="${DENOTS_RAW_URL:-https://raw.githubusercontent.com/xiongli870110-hue/proxy_api_docker/main/deno_google.ts}"
 # 可选：传入期望的 sha256 值以防止被意外改动
 EXPECTED_SHA256="${DENOTS_SHA256:-}"
 
