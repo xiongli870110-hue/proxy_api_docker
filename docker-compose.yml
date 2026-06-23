@@ -2,7 +2,7 @@ version: "3.8"
 services:
   groq-proxy:
     build: .
-    image: proxyapi:latest
+    image: proxyapi:1.0.0
     container_name: proxyapi
     restart: unless-stopped
     environment:
