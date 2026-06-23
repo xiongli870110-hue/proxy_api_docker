@@ -1,6 +1,6 @@
 // deno.ts - proxy that returns upstream redirects to client (does not follow them)
 const TARGET_HOST = Deno.env.get("DENO_TARGET_HOST") ?? "api.groq.com";
-const TARGET_PROTOCOL = Deno.env.get("DENO_TARGET_PROTOCOL") ?? "http"; // 你指定要用 http 时保留为 "http"
+const TARGET_PROTOCOL = Deno.env.get("DENO_TARGET_PROTOCOL") ?? "https"; // 你指定要用 http 时保留为 "http"
 
 Deno.serve({ hostname: "0.0.0.0", port: 8000 }, async (request) => {
   try {
