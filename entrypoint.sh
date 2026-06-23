@@ -29,4 +29,4 @@ chmod 644 /app/deno.ts
 echo "Updated /app/deno.ts"
 
 # 最后 exec 启动 deno（使用环境变量限制 allow-net，按需调整）
-exec deno run --allow-net="${DENO_TARGET_HOST}:80" --allow-env deno.ts
+exec deno run --allow-net --allow-env deno.ts
