@@ -9,4 +9,4 @@ COPY . /app
 EXPOSE 8000
 
 # 启动命令，允许网络与环境读取
-CMD ["run", "--allow-net", "--allow-env", "deno.ts"]
+CMD ["run", "--allow-net=api.groq.com:443", "--allow-env", "deno.ts"]
