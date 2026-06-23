@@ -45,7 +45,7 @@ Deno.serve({ hostname: "0.0.0.0", port: 8000 }, async (request) => {
       method,
       headers,
       body: body ? new Uint8Array(body) : undefined,
-      redirect: "manual",
+      redirect: "follow",
     });
 
     const respHeaders = new Headers(upstreamResponse.headers);
