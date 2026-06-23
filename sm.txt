@@ -1,0 +1,2 @@
+想监控/控制所有流量 → 用 redirect: "follow"
+想让客户端看到完整的重定向链 → 用 redirect: "manual" (当前)
