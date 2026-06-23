@@ -7,7 +7,7 @@ env:
   REGISTRY: docker.io
   NAMESPACE: xiongli870110        # DockerHub 用户名
   IMAGE_NAME: proxyapi
-  VERSION: 1.0.0           # 👈 在这里定义版本变量
+  VERSION: 1.0.1           # 👈 在这里定义版本变量
 
 jobs:
   build-and-push:
