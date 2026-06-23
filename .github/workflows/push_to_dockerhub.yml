@@ -5,7 +5,7 @@ on:
 
 env:
   REGISTRY: docker.io
-  NAMESPACE: rakefu        # DockerHub 用户名
+  NAMESPACE: xiongli870110        # DockerHub 用户名
   IMAGE_NAME: proxyapi
   VERSION: 1.0.0           # 👈 在这里定义版本变量
 
