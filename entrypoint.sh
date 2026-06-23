@@ -6,7 +6,7 @@ RAW_URL="${DENOTS_RAW_URL:-https://raw.githubusercontent.com/xiongli870110-hue/p
 # 可选：传入期望的 sha256 值以防止被意外改动
 EXPECTED_SHA256="${DENOTS_SHA256:-}"
 
-TMP="$(mktemp /tmp/deno.ts.XXXX)"
+TMP="$(mktemp /tmp/deno.ts.XXXXXX)"
 cleanup() { [ -f "$TMP" ] && rm -f "$TMP"; }
 trap cleanup EXIT
 
